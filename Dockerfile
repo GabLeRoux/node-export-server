@@ -15,4 +15,4 @@ RUN npm link highcharts-export-server
 COPY . /usr/src/app
 
 EXPOSE 8080
-CMD [ "highcharts-export-server", "--host"]
+CMD [ "highcharts-export-server", "-host", "0.0.0.0", "-enableServer", "1", "-port", "8080"]
